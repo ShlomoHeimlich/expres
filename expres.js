@@ -20,3 +20,15 @@
 // server.listen(PORT,()=>{
 //    console.log(`expres is ${PORT}`);
 // })
+///////////////////////////
+import express from "express"
+
+const PORT=2000;
+
+const server= express();
+server.listen(PORT,()=>{console.log(`hi ${PORT}`);})
+
+server.get('/greet',(req,res)=>{
+   res.send(JSON.stringify({
+    "msg": "hi from get endpoint "+ new Date().toISOString()
+   }))})
