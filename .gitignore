@@ -1,0 +1,27 @@
+# תלותים של npm
+node_modules/
+
+# קבצי לוג
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# קבצים זמניים של מערכת
+.DS_Store
+Thumbs.db
+
+# סביבה מקומית (למשל קבצי סיסמאות זמניים או קבצי dev)
+.env
+
+# תוצרי build
+dist/
+build/
+
+# קבצי cache של VSCode או IDE
+.vscode/
+.idea/
+*.swp
+
+# קבצים שנוצרים ע"י מערכות הפעלה
+*.tmp
